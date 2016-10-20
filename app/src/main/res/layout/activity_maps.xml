@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:context="com.softutils.smarttransportpa.MapsActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/query"
+        android:text="QUERY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newMap" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newMap"
+        android:text="SET NEW COORDINATES"
+        android:layout_below="@+id/map"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/query"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:text="Query Text"
+        android:id="@+id/queryText"/>
+
+</RelativeLayout>
+
+
